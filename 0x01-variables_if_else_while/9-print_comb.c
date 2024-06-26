@@ -11,14 +11,13 @@ int num;
 
 for (num = 0; num <= 9; num++)
 {
-putchar(num + '0'); // Print the digit
+putchar(num + '0'); /* Print the digit */
 if (num < 9)
 {
-putchar(','); // Print comma
-putchar(' '); // Print space
+putchar(','); /* Print comma */
+putchar(' '); /* Print space */
 }
 }
-putchar('\n'); // Print new line
-
+putchar('\n'); /* Print new line */
 return (0);
 }
