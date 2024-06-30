@@ -4,11 +4,6 @@
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
+int _islower(int c); // Prototype for _islower function
 
 #endif /* MAIN_H */
-
-int test_islower(int n) {
-  int r;
-
-  r = _islower(n);
-  return (r);
