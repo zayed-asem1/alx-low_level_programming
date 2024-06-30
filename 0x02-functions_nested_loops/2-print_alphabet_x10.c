@@ -2,13 +2,12 @@
 
 /**
  * print_alphabet_x10
- * Prints the alphabet in lowercase 10 times, each on a new line
+ * prints the alphabet in lowercase 10 times, each on a new line
  */
 void print_alphabet_x10(void)
 {
 char letter;
 int i;
-
 i = 0;
 while (i < 10)
 {
@@ -18,7 +17,7 @@ while (letter <= 'z')
 _putchar(letter);
 letter++;
 }
-_putchar('\n'); // Print newline after each line of alphabet
+_putchar('\n'); /* Print newline after each line of alphabet */
 i++;
 }
 }
