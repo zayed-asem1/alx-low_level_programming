@@ -6,3 +6,9 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 
 #endif /* MAIN_H */
+
+int test_islower(int n) {
+  int r;
+
+  r = _islower(n);
+  return (r);
