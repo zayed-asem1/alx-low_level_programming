@@ -1,23 +1,23 @@
-#include "main.h"
+#include <stdio.h>
+#include "my_isalpha.h"
 
 /**
- * main - check the code.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Description: This function tests the _isalpha function.
+ * Return: 0 on success
  */
 int main(void)
 {
-int r;
+char c = 'a';
 
-r = _isalpha('H');
-_putchar(r + '0'); /* Print the result ('0' or '1') */
-r = _isalpha('o');
-_putchar(r + '0'); /* Print the result ('0' or '1') */
-r = _isalpha(108);
-_putchar(r + '0'); /* Print the result ('0' or '1') */
-r = _isalpha('$');
-_putchar(r + '0'); /* Print the result ('0' or '1') */
-_putchar('\n');
-
+if (_isalpha(c))
+{
+printf("%c is an alphabetic character.\n", c);
+}
+else
+{
+printf("%c is not an alphabetic character.\n", c);
+}
 return (0);
 }
