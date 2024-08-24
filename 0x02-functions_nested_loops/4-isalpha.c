@@ -1,23 +1,15 @@
-#include <stdio.h>
-#include "my_isalpha.h"
+#include "main.h"
 
 /**
- * main - Entry point
+ * _isalpha - checks if a character is an alphabetic character.
+ * @c: the character to check.
  *
- * Description: This function tests the _isalpha function.
- * Return: 0 on success
+ * Return: 1 if c is a letter, lowercase or uppercase, 0 otherwise.
  */
-int main(void)
+int _isalpha(int c)
 {
-char c = 'a';
-
-if (_isalpha(c))
-{
-printf("%c is an alphabetic character.\n", c);
-}
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+return (1);
 else
-{
-printf("%c is not an alphabetic character.\n", c);
-}
 return (0);
 }
